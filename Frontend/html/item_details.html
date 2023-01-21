@@ -4,12 +4,21 @@
     <meta charset="utf-8">
     <title>homepage</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/item_details.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <script src="https://kit.fontawesome.com/c8503353a1.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Damion&family=Poppins&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.1/dist/css/themes/splide-skyblue.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.1/dist/js/splide.min.js">
+    </script>
   </head>
   <body>
         <nav>
@@ -40,50 +49,85 @@
         </nav>
     
     <div id="bottom_nav">
-        <p><a href="./html/products.html">Home Decor</a></p>
-        <p><a href="./html/products.html ">Tole Bags</a></p>
-        <p><a href="./html/products.html">Kitchen Ware</a></p>
-        <p><a href="./html/products.html">Ceramic Mugs</a></p>
-    </div>
-    <div id="shop_cat_h1">
-        <p>Shop  By  Category</p>
-    </div>
-    <div id="home_img">
-        <img src="https://cdn.plotch.io/image/upload/C/V/1671109983_Mi5wbmc=.png" />
-        <img src="https://cdn.plotch.io/image/upload/C/V/1671109989_My5wbmc=.png" />
-        <img src="https://cdn.plotch.io/image/upload/C/V/1671109994_NC5wbmc=.png" />
-        <img src="https://cdn.plotch.io/image/upload/C/V/1671109999_NS5wbmc=.png" />
+        <p><a href="./products.html">Home Decor</a></p>
+        <p><a href="./products.html ">Tole Bags</a></p>
+        <p><a href="./products.html">Kitchen Ware</a></p>
+        <p><a href="./products.html">Ceramic Mugs</a></p>
     </div>
 
-    <div class="slideshow-container">
+    <!-- product details -->
+    
+    <div id="main">
 
-        <div class="mySlides fade">
-          <img src="https://cdn.plotch.io/image/upload/C/V/1671110161_Mi5wbmc=.png" style="width:100%">
+        <div id="item_image">
+            
         </div>
-        
-        <div class="mySlides fade">
-          <img src="https://cdn.plotch.io/image/upload/C/V/1671110155_NC5wbmc=.png" style="width:100%">
+    
+        <div id="info">
+    
+          <p id="item_name">Brand</p>
+            
+          <div id="item_price_div">
+            <p id="item_price">Price</p>
+            <s id="item_strike">strike</s>
+            <p id="item_discount">discount</p>
+          </div>
+          
+    
+          <p id="tax">VAT exception. VAT not included.</p>
+          <p id="tax1">item no. P00766526</p>
+    
+          <button class="button_cart">Add to Cart <i class="fa-solid fa-bag-shopping"> </i></button>
+          <button class="button_wishlist">Add to Wishlist <i class="fa-regular fa-heart"></i></button>
+    
+          <p id="ship"><b>Free Shipping </b>on all orders for a limited time only.</p>
+    
+          <button class="accordion" id="sty">Product details</button>
+          <div class="panel">
+            <p>Luxury Pack of Cotton Pieces Face Towel</p>
+            <li>upper: fabric</li>
+            <li>Home & Decor</li>
+            <li>Cotton</li>
+            <li>Cotton Washbasin Napkin|Hand Towel for Kitchen and Bathroom</li>
+            <li>Kitchen Ware</li>
+            <li>Made in Italy</li>
+          </div>
+    
+          <button class="accordion">size and fit</button>
+          <div class="panel">
+            <li>True to size</li>
+            <li>Slightly wide</li>
+            <li>Half sizes please take the next size up</li>
+            <li>European sizes</li>
+            <li>2,5cm-1" platform (size EU 38)</li>
+            <li>5cm-2" wedge heel (size EU 38)</li>
+            <p>If you have any questions, please call our customer care team at</p>
+            <p class="pp">+49 89 127695-101</p>
+            <p class="pp">Argentina: 0800-666-0663</p>
+            <p class="pp">Chile: 800-914-515</p>
+            <p class="pp">Colombia: 01800-518-5268</p>
+            <p class="pp">Mexico: 01-800-099-0703</p>
+          </div>
+    
+          <button class="accordion">delivery and free returns</button>
+          <div class="panel">
+            <p>All orders are shipped worldwide via our affiliate courier DHL. Please see the shipping method as well as shipping costs and delivery times for your destination <u>here</u>.</p>
+            <p>We gladly accept returns within 30 days of receipt free of charge. Read <u>here</u>.</p>
+          </div>
+    
+          <p class="ppp">More questions about this item?</p>
+          <p class="ppp">See more Balenciaga</p>
+          <p class="ppp">See more Shoes by Balenciaga</p>
+    
+          <!-- icons -->
+          <div id="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-pinterest"></i>
+          </div>
+    
         </div>
-        
-        <div class="mySlides fade">
-          <img src="https://cdn.plotch.io/image/upload/C/V/1671110178_SG9tZWRlY29yLnBuZw==.png" style="width:100%">
-        </div>
-        
-        </div>
-        <br>
-        
-        <div style="text-align:center">
-          <span class="dot"></span> 
-          <span class="dot"></span> 
-          <span class="dot"></span> 
-    </div>
-
-    <div id="home_img1">
-        <img src="https://cdn.plotch.io/image/upload/C/V/1671110234_SG9tZWRlY29yLnBuZw==.png" />
-        <img src="https://cdn.plotch.io/image/upload/C/V/1671110241_NS5wbmc=.png" />
-        <img src="https://cdn.plotch.io/image/upload/C/V/1671110248_Ni5wbmc=.png" />
-        <img src="https://cdn.plotch.io/image/upload/C/V/1671110264_My5wbmc=.png" />
-    </div>
+      </div>
 
     <div id="footer">
         <div class="footer_1">
@@ -125,25 +169,5 @@
         </div>
     </div>
   </body>
-  <script>
-    let slideIndex = 0;
-    showSlides();
-    
-    function showSlides() {
-      let i;
-      let slides = document.getElementsByClassName("mySlides");
-      let dots = document.getElementsByClassName("dot");
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
-      }
-      slideIndex++;
-      if (slideIndex > slides.length) {slideIndex = 1}    
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex-1].style.display = "block";  
-      dots[slideIndex-1].className += " active";
-      setTimeout(showSlides, 4000);
-    }
-</script>
 </html>
+<script src="../js/item_details.js"></script>
