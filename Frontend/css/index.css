@@ -391,9 +391,9 @@
   font-weight: 600;
   gap: 3%;
 }
-#botton_nav>p{
-  padding: 10px 0px;
-  cursor: pointer;
+#bottom_nav a {
+  color: white;
+  text-decoration: none;
 }
 #bottom_nav p:hover{
   color: #902735;
@@ -401,6 +401,14 @@
   padding: 7px 3px;
   border-radius: 5px;
   background-color: #ffffff;
+}
+#bottom_nav a:hover {
+  color: #902735;
+  text-decoration: none;
+}
+#bottom_nav>p{
+  padding: 10px 0px;
+  cursor: pointer;
 }
 @media (max-width:612px){
   #bottom_nav{

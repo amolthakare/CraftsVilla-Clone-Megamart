@@ -4,12 +4,21 @@
     <meta charset="utf-8">
     <title>homepage</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/cart.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <script src="https://kit.fontawesome.com/c8503353a1.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Damion&family=Poppins&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.1/dist/css/themes/splide-skyblue.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.1/dist/js/splide.min.js">
+    </script>
   </head>
   <body>
         <nav>
@@ -18,7 +27,7 @@
                 <i class="fas fa-bars"></i>
             </label>
             <div id="logo">
-                <a href="./index.html">
+                <a href="../index.html">
                     <div class="logo">
                         <h1>Megamart</h1>
                     </div>
@@ -32,57 +41,47 @@
             <ul id="ul_tag">
                 <li><a href="#"><i id="about_us" class="fa-solid fa-circle-info"></i>About us</a></li>
                 <li><a href="#"><i id="itag" class="fa-solid fa-bell"></i>Alert</a></li>
-                <li><a href="./html/login.html"><i id="itag" class="fa-solid fa-user"></i>Login</a></li>
+                <li><a href="./login.html"><i id="itag" class="fa-solid fa-user"></i>Login</a></li>
                 <li><a href="#"><i id="itag" class="fa-regular fa-heart"></i>Wishlist</a></li>
-                <li><a href="./html/cart.html"><i id="itag" class="fa-solid fa-cart-shopping"></i>Cart</a></li>
+                <li><a href="./cart.html"><i id="itag" class="fa-solid fa-cart-shopping"></i>Cart</a></li>
                 <li id="cart_c">(0)</li>
             </ul>
         </nav>
     
     <div id="bottom_nav">
-        <p><a href="./html/products.html">Home Decor</a></p>
-        <p><a href="./html/products.html ">Tole Bags</a></p>
-        <p><a href="./html/products.html">Kitchen Ware</a></p>
-        <p><a href="./html/products.html">Ceramic Mugs</a></p>
-    </div>
-    <div id="shop_cat_h1">
-        <p>Shop  By  Category</p>
-    </div>
-    <div id="home_img">
-        <img src="https://cdn.plotch.io/image/upload/C/V/1671109983_Mi5wbmc=.png" />
-        <img src="https://cdn.plotch.io/image/upload/C/V/1671109989_My5wbmc=.png" />
-        <img src="https://cdn.plotch.io/image/upload/C/V/1671109994_NC5wbmc=.png" />
-        <img src="https://cdn.plotch.io/image/upload/C/V/1671109999_NS5wbmc=.png" />
+        <p><a href="./products.html">Home Decor</a></p>
+        <p><a href="./products.html ">Tole Bags</a></p>
+        <p><a href="./products.html">Kitchen Ware</a></p>
+        <p><a href="./products.html">Ceramic Mugs</a></p>
     </div>
 
-    <div class="slideshow-container">
+    <!-- product details -->
+    <div id="container">
+        <div class="left">
+        </div>
 
-        <div class="mySlides fade">
-          <img src="https://cdn.plotch.io/image/upload/C/V/1671110161_Mi5wbmc=.png" style="width:100%">
-        </div>
-        
-        <div class="mySlides fade">
-          <img src="https://cdn.plotch.io/image/upload/C/V/1671110155_NC5wbmc=.png" style="width:100%">
-        </div>
-        
-        <div class="mySlides fade">
-          <img src="https://cdn.plotch.io/image/upload/C/V/1671110178_SG9tZWRlY29yLnBuZw==.png" style="width:100%">
-        </div>
-        
-        </div>
-        <br>
-        
-        <div style="text-align:center">
-          <span class="dot"></span> 
-          <span class="dot"></span> 
-          <span class="dot"></span> 
-    </div>
+        <div class="right">
+            <div class="top">
+                <div class="cartTotal">
+                    <h1>Cart Total : ₹</h1>
+                    <h1 class="total"></h1>
+                </div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlWA5kqwZR63rkyAF90ccKk4VAB28WG96VVmvwXnq2o5660x9VjUet0uxOfC4yeY87-w&usqp=CAU"
+                    alt="" />
+                <p>SHIPPING METHOD : FREE</p>
+                <p>CASH ON DELEVERY : AVAILABLE</p>
+                <a href="./checkout.html">
+                    <button>Proceed To Checkout</button>
+                </a>
+            </div>
 
-    <div id="home_img1">
-        <img src="https://cdn.plotch.io/image/upload/C/V/1671110234_SG9tZWRlY29yLnBuZw==.png" />
-        <img src="https://cdn.plotch.io/image/upload/C/V/1671110241_NS5wbmc=.png" />
-        <img src="https://cdn.plotch.io/image/upload/C/V/1671110248_Ni5wbmc=.png" />
-        <img src="https://cdn.plotch.io/image/upload/C/V/1671110264_My5wbmc=.png" />
+            <div class="bottom">
+                <h2>OFFER CODE</h2>
+                <input placeholder="Coupon Code" id="descountCupon"/>
+                <button id="cupanButton">Apply</button>
+                <p class="code">use 'mega30' to get 30% off. </p>
+            </div>
+        </div>
     </div>
 
     <div id="footer">
@@ -125,28 +124,6 @@
         </div>
     </div>
   </body>
-  <script>
-    // slideshow
-    let slideIndex = 0;
-    showSlides();
-    
-    function showSlides() {
-      let i;
-      let slides = document.getElementsByClassName("mySlides");
-      let dots = document.getElementsByClassName("dot");
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
-      }
-      slideIndex++;
-      if (slideIndex > slides.length) {slideIndex = 1}    
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex-1].style.display = "block";  
-      dots[slideIndex-1].className += " active";
-      setTimeout(showSlides, 4000);
-    }
-</script>
 </html>
-<script src="./js/cart_length.js"></script>
+<script src="../js/cart.js"></script>
 <script src="../js/cart_length.js"></script>

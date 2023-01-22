@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <title>homepage</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/checkout.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <script src="https://kit.fontawesome.com/c8503353a1.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,7 +19,7 @@
                 <i class="fas fa-bars"></i>
             </label>
             <div id="logo">
-                <a href="./index.html">
+                <a href="../index.html">
                     <div class="logo">
                         <h1>Megamart</h1>
                     </div>
@@ -32,58 +33,82 @@
             <ul id="ul_tag">
                 <li><a href="#"><i id="about_us" class="fa-solid fa-circle-info"></i>About us</a></li>
                 <li><a href="#"><i id="itag" class="fa-solid fa-bell"></i>Alert</a></li>
-                <li><a href="./html/login.html"><i id="itag" class="fa-solid fa-user"></i>Login</a></li>
+                <li><a href="./login.html"><i id="itag" class="fa-solid fa-user"></i>Login</a></li>
                 <li><a href="#"><i id="itag" class="fa-regular fa-heart"></i>Wishlist</a></li>
-                <li><a href="./html/cart.html"><i id="itag" class="fa-solid fa-cart-shopping"></i>Cart</a></li>
+                <li><a href="./cart.html"><i id="itag" class="fa-solid fa-cart-shopping"></i>Cart</a></li>
                 <li id="cart_c">(0)</li>
             </ul>
         </nav>
     
     <div id="bottom_nav">
-        <p><a href="./html/products.html">Home Decor</a></p>
-        <p><a href="./html/products.html ">Tole Bags</a></p>
-        <p><a href="./html/products.html">Kitchen Ware</a></p>
-        <p><a href="./html/products.html">Ceramic Mugs</a></p>
-    </div>
-    <div id="shop_cat_h1">
-        <p>Shop  By  Category</p>
-    </div>
-    <div id="home_img">
-        <img src="https://cdn.plotch.io/image/upload/C/V/1671109983_Mi5wbmc=.png" />
-        <img src="https://cdn.plotch.io/image/upload/C/V/1671109989_My5wbmc=.png" />
-        <img src="https://cdn.plotch.io/image/upload/C/V/1671109994_NC5wbmc=.png" />
-        <img src="https://cdn.plotch.io/image/upload/C/V/1671109999_NS5wbmc=.png" />
+        <p><a href="./products.html">Home Decor</a></p>
+        <p><a href="./products.html ">Tole Bags</a></p>
+        <p><a href="./products.html">Kitchen Ware</a></p>
+        <p><a href="./products.html">Ceramic Mugs</a></p>
     </div>
 
-    <div class="slideshow-container">
+    
+    <div id="review">
 
-        <div class="mySlides fade">
-          <img src="https://cdn.plotch.io/image/upload/C/V/1671110161_Mi5wbmc=.png" style="width:100%">
+        <div id="adress">
+            <p>CHECKOUT</p>
+            <p>Customer Details</p>
+            <br>
+            <div class="first">
+                <input type="text" placeholder="*First Name" required>
+                <input type="text" placeholder="*Last Name" required>
+            </div>
+            <div class="second">
+                <input type="text" placeholder="*Street Address" required>
+                <input type="text" placeholder="Apt, Suite, floor">
+            </div>
+            <div class="third">
+                <input id="zip" type="text" placeholder="*Zip Code" required>
+                <input type="text" placeholder="*City" required>
+                <input type="text" placeholder="STATE" required>
+                <input type="text" placeholder="COUNTRY" required>
+            </div>
+            <div class="four">
+                <input type="text" placeholder="*ENTER MOBILE" required>
+            </div>   
         </div>
-        
-        <div class="mySlides fade">
-          <img src="https://cdn.plotch.io/image/upload/C/V/1671110155_NC5wbmc=.png" style="width:100%">
-        </div>
-        
-        <div class="mySlides fade">
-          <img src="https://cdn.plotch.io/image/upload/C/V/1671110178_SG9tZWRlY29yLnBuZw==.png" style="width:100%">
-        </div>
-        
-        </div>
-        <br>
-        
-        <div style="text-align:center">
-          <span class="dot"></span> 
-          <span class="dot"></span> 
-          <span class="dot"></span> 
-    </div>
 
-    <div id="home_img1">
-        <img src="https://cdn.plotch.io/image/upload/C/V/1671110234_SG9tZWRlY29yLnBuZw==.png" />
-        <img src="https://cdn.plotch.io/image/upload/C/V/1671110241_NS5wbmc=.png" />
-        <img src="https://cdn.plotch.io/image/upload/C/V/1671110248_Ni5wbmc=.png" />
-        <img src="https://cdn.plotch.io/image/upload/C/V/1671110264_My5wbmc=.png" />
+        <div id="order_details">
+            <p class="order_d_1">Order Details</p>
+            <div class="order_products_div">
+                <!-- <div class="order_products">
+                    <img src="https://cdn.plotch.io/image/upload/w_118,h_118/C/V/PLOY7FmaJL1668189623_b9e1357684a9591fd93467ed9887d760765cfe6be7140a48f38580253cc98d04.jpeg" />
+                    <div>
+                        <p class="order_products_name">Cotton Washbasin Napkin|Hand Towel for Kitchen and Bathroom</p>
+                        <p class="order_products_name1">Estimated delivery time 24 Jan 2023</p>
+                    </div>
+                </div> -->
+            </div>
+
+            <div class="price_div">
+                <p>Price</p>
+                <p class="total">0</p>
+            </div>
+
+            <div class="shipping_div">
+                <p >Discount</p>
+                <p class="discountt">0</p>
+            </div>
+
+            <div class="total_div">
+                <p>Total Payment</p>
+                <p class="Total">0</p>
+            </div>
+            
+            <div id="payment_div">
+                <a href="./payment.html"><button id="payment">Continue With Payment</button></a>
+                
+            </div>
+
+        </div>
+
     </div>
+    
 
     <div id="footer">
         <div class="footer_1">
@@ -125,28 +150,6 @@
         </div>
     </div>
   </body>
-  <script>
-    // slideshow
-    let slideIndex = 0;
-    showSlides();
-    
-    function showSlides() {
-      let i;
-      let slides = document.getElementsByClassName("mySlides");
-      let dots = document.getElementsByClassName("dot");
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
-      }
-      slideIndex++;
-      if (slideIndex > slides.length) {slideIndex = 1}    
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex-1].style.display = "block";  
-      dots[slideIndex-1].className += " active";
-      setTimeout(showSlides, 4000);
-    }
-</script>
 </html>
-<script src="./js/cart_length.js"></script>
+<script src="../js/checkout.js"></script>
 <script src="../js/cart_length.js"></script>

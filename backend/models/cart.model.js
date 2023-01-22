@@ -6,7 +6,8 @@ const cartSchema = mongoose.Schema({
     price : Number,
     strike : String,
     discount: String,
-    userID : String
+    userID : String,
+    quant : Number
 }) 
 
 const CartModel = mongoose.model("cart",cartSchema);

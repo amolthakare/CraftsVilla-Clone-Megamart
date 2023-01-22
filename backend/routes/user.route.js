@@ -39,7 +39,7 @@ UserRoutes.post("/login",async(req,res)=>{
             bcrypt.compare(pass, user[0].pass, function(err, result) {
                 if(result){
                     const token = jwt.sign({ userID:user[0]._id }, process.env.key);
-                    res.send({"msg":"logged in","token":token});
+                    res.send({"msg":"logged in","token":token,"userID":user[0]._id});
                 }
                 else{
                     res.send("wrong credentials")
