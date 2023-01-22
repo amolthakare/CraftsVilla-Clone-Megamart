@@ -33,8 +33,7 @@
                 <button class="searchbtn"><i class="fa-solid fa-magnifying-glass"></i></button>
             </div>
             <ul id="ul_tag">
-                <li><a href="#"><i id="about_us" class="fa-solid fa-circle-info"></i>About us</a></li>
-                <li><a href="#"><i id="itag" class="fa-solid fa-bell"></i>Alert</a></li>
+                <li><a href="./admin.html"><i id="itag" class="fa-solid fa-user"></i>Admin login</a></li>
                 <li><a href="./login.html"><i id="itag" class="fa-solid fa-user"></i>Login</a></li>
                 <li><a href="#"><i id="itag" class="fa-regular fa-heart"></i>Wishlist</a></li>
                 <li><a href="./cart.html"><i id="itag" class="fa-solid fa-cart-shopping"></i>Cart</a></li>
@@ -54,7 +53,7 @@
             
             <input type="email" placeholder="Enter Your Email ID" id="email"/>
             <input type="password" placeholder="Enter Your Password" id="password"/>
-            <input type="submit" value="Log in" id="login_btn" onclick="myFunction()">
+            <input type="submit" value="Log in" id="login_btn" >
             <!-- <div id="snackbar">Login Succesful</div> -->
 
         </form>
@@ -128,6 +127,7 @@
                 console.log(data.userID);
                 localStorage.setItem("userID",data.userID);
                 localStorage.setItem("data_length",data.token);
+                localStorage.setItem("login",data.token);
                 alert("Login Succesfully");
                 window.location="../index.html";
             }
