@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/admin_dashboard.css">
+</head>
+<body>
+
+    <div class="home">
+        <input type="submit" value="HOMEPAGE" id="home" />
+    </div>
+    <div id="signup">
+        <div class="aligncenter">
+            <h1>ADD A NEW PRODUCT</h1>
+        </div>
+        
+  
+        <form id="register" class="signup">
+          <input
+            id="image_post"
+            type="text"
+            placeholder="Enter product src"
+            required
+          />
+          <input
+            id="name_post"
+            type="text"
+            placeholder="Enter product name"
+            required
+          />
+          <input
+            id="price_post"
+            type="number"
+            placeholder="Enter product price"
+            required
+          />
+          <input type="submit" value="ADD" id="signup_btn" />
+        </form>
+      </div>
+
+      <table>
+        <!-- Dont change order of columns -->
+        <thead>
+          <tr>
+            <th>Image</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Strike</th>
+            <th>Discount</th>
+            <th>Delete</th>
+            <th>Edit</th>
+          </tr>
+        </thead>
+        <tbody>
+        <!-- Append your output to tbody -->
+        </tbody>
+      </table>
+</body>
+</html>
+<script src="../js/admin_dashboard.js"></script>
