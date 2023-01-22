@@ -1,121 +1,177 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>login</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/navbar_footer.css">
-    <link rel="stylesheet" href="../css/signup.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-    <script src="https://kit.fontawesome.com/c8503353a1.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Damion&family=Poppins&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/navbar_footer.css" />
+    <link rel="stylesheet" href="../css/signup.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/c8503353a1.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Damion&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-        <nav>
-            <input type="checkbox" id="check">
-            <label for="check" class="checkbtn">
-                <i class="fas fa-bars"></i>
-            </label>
-            <div id="logo">
-                <a href="../index.html">
-                    <div class="logo">
-                        <h1>Megamart</h1>
-                    </div>
-                </a>
+    <nav>
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <div id="logo">
+        <a href="../index.html">
+          <div class="logo">
+            <h1>Megamart</h1>
+          </div>
+        </a>
+      </div>
 
-            </div>
-            
-            <div class="div3">
-                <input id="search" type="search" placeholder="Search for Products"/>
-                <button class="searchbtn"><i class="fa-solid fa-magnifying-glass"></i></button>
-            </div>
-            <ul id="ul_tag">
-                <li><a href="#"><i id="about_us" class="fa-solid fa-circle-info"></i>About us</a></li>
-                <li><a href="#"><i id="itag" class="fa-solid fa-bell"></i>Alert</a></li>
-                <li><a href="#"><i id="itag" class="fa-solid fa-user"></i>Login</a></li>
-                <li><a href="#"><i id="itag" class="fa-regular fa-heart"></i>Wishlist</a></li>
-                <li><a href="#"><i id="itag" class="fa-solid fa-cart-shopping"></i>Cart</a></li>
-                <li id="cart_c">(0)</li>
-            </ul>
-        </nav>
+      <div class="div3">
+        <input id="search" type="search" placeholder="Search for Products" />
+        <button class="searchbtn">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+      <ul id="ul_tag">
+        <li>
+          <a href="#"
+            ><i id="about_us" class="fa-solid fa-circle-info"></i>About us</a
+          >
+        </li>
+        <li>
+          <a href="#"><i id="itag" class="fa-solid fa-bell"></i>Alert</a>
+        </li>
+        <li>
+          <a href="./login.html"
+            ><i id="itag" class="fa-solid fa-user"></i>Login</a
+          >
+        </li>
+        <li>
+          <a href="./cart.html"
+            ><i id="itag" class="fa-regular fa-heart"></i>Wishlist</a
+          >
+        </li>
+        <li>
+          <a href="#"
+            ><i id="itag" class="fa-solid fa-cart-shopping"></i>Cart</a
+          >
+        </li>
+        <li id="cart_c">(0)</li>
+      </ul>
+    </nav>
 
     <!-- signup -->
     <div id="signup">
+      <div class="logo_login">
+        <p>Megamart</p>
+      </div>
 
-        <div class="logo_login">
-            <p>Megamart</p>
-        </div>
+      <p class="loginsign">Sign Up</p>
+      <p class="loginsign1">Looks like you're new here!</p>
+      <p class="loginsign2">Sign up with your email to get started</p>
 
-        <p class="loginsign">Sign Up</p>
-        <p class="loginsign1">Looks like you're new here!</p>
-        <p class="loginsign2">Sign up with your email to get started</p>
+      <form id="register" class="signup">
+        <input
+          id="name"
+          type="text"
+          placeholder="Enter Your First name"
+          required
+        />
+        <input
+          id="last"
+          type="text"
+          placeholder="Enter Your Last name"
+          required
+        />
+        <input
+          id="email"
+          type="email"
+          placeholder="Enter Your Email ID"
+          required
+        />
+        <input
+          id="password"
+          type="password"
+          placeholder="Enter Your Password"
+          required
+        />
+        <input type="submit" value="Sign up" id="signup_btn" />
+      </form>
 
-        <form id="register" class="signup">
-            <input id="name" type="text" placeholder="Enter Your First name" required/>
-            <input id="last" type="text" placeholder="Enter Your Last name" required/>
-            <input id="email" type=email placeholder="Enter Your Email ID" required/>
-            <input id="password" type="password" placeholder="Enter Your Password" required/>
-            <input type="submit" value="Sign up" id="signup_btn" >
-        </form>
-        
-        <div id="inst">
-            <p>Already have an account? <a href="login.html">login</a></p>
-            <p><input type="checkbox" id="check">I'd like to receive recurring advertising text messages (SMS and MMS) from Tralive. I understand
-                these text messages may be sent via an autodialer, that consent is not required to purchase goods
-                from Tralive, and that I can opt-out any time by replying STOP to the text message I receive
-                from Tralive.I agree to the Notice of <a href="">Financial Incentive.</a> To learn more, view our <a href="">Privacy Policy.</a>
-            </p>
-        </div>
-        
+      <div id="inst">
+        <p>Already have an account? <a href="login.html">login</a></p>
+        <p>
+          <input type="checkbox" id="check" />I'd like to receive recurring
+          advertising text messages (SMS and MMS) from Tralive. I understand
+          these text messages may be sent via an autodialer, that consent is not
+          required to purchase goods from Tralive, and that I can opt-out any
+          time by replying STOP to the text message I receive from Tralive.I
+          agree to the Notice of <a href="">Financial Incentive.</a> To learn
+          more, view our <a href="">Privacy Policy.</a>
+        </p>
+      </div>
     </div>
 
     <div id="footer">
-        <div class="footer_1">
-            <h1>About Us</h1>
-            <p>India's most convenient online grocery channel Buyerapp Fresh and Smart makes your grocery shopping even simpler. No more hassles of sweating it out in crowded markets, grocery shops & supermarkets - now shop from the comfort of your home; office, or on the move. We offer you the convenience of shopping for everything that you need for your home - be it fresh fruits & vegetables, rice, dals, oil, packaged food, dairy item, frozen, pet food, household cleaning items & personal care products from a single virtual store.</p>
-            <h1>PAYMENT OPTIONS</h1>
-            <div id="footer_card">
-                <i class="fa-brands fa-cc-visa"></i>
-                <i class="fa-brands fa-cc-mastercard"></i>
-                <i class="fa-brands fa-cc-paypal"></i>
-                <i class="fa-brands fa-cc-amazon-pay"></i>
-                <i class="fa-brands fa-cc-amex"></i>
-            </div>
+      <div class="footer_1">
+        <h1>About Us</h1>
+        <p>
+          India's most convenient online grocery channel Buyerapp Fresh and
+          Smart makes your grocery shopping even simpler. No more hassles of
+          sweating it out in crowded markets, grocery shops & supermarkets - now
+          shop from the comfort of your home; office, or on the move. We offer
+          you the convenience of shopping for everything that you need for your
+          home - be it fresh fruits & vegetables, rice, dals, oil, packaged
+          food, dairy item, frozen, pet food, household cleaning items &
+          personal care products from a single virtual store.
+        </p>
+        <h1>PAYMENT OPTIONS</h1>
+        <div id="footer_card">
+          <i class="fa-brands fa-cc-visa"></i>
+          <i class="fa-brands fa-cc-mastercard"></i>
+          <i class="fa-brands fa-cc-paypal"></i>
+          <i class="fa-brands fa-cc-amazon-pay"></i>
+          <i class="fa-brands fa-cc-amex"></i>
         </div>
-        <div class="footer_2">
-            <div>
+      </div>
+      <div class="footer_2">
+        <div>
+          <h1>OUR COMPANY</h1>
+          <p>About Us</p>
+          <p>Contact Us</p>
+          <p>Review</p>
 
-                <h1>OUR COMPANY</h1>
-                <p>About Us</p>
-                <p>Contact Us</p>
-                <p>Review</p>
-
-                <h1>TOP CATEGORIES</h1>
-                <P>Glocery</P>
-                <p>Home Decor</p>
-
-            </div>
-            <div>
-                <h1 class="footer_poly">POLICIES & INFO</h1>
-                <p>Privacy Policy</p>
-                <p>Terms and Condition</p>
-                <p>Shipping Policy</p>
-                <p>Return and Refund</p>
-
-                <h1>SUPPORT</h1>
-                <p>For help, send an email to</p>
-                <p>care@megamart.in</p>
-            </div>
+          <h1>TOP CATEGORIES</h1>
+          <p>Glocery</p>
+          <p>Home Decor</p>
         </div>
+        <div>
+          <h1 class="footer_poly">POLICIES & INFO</h1>
+          <p>Privacy Policy</p>
+          <p>Terms and Condition</p>
+          <p>Shipping Policy</p>
+          <p>Return and Refund</p>
+
+          <h1>SUPPORT</h1>
+          <p>For help, send an email to</p>
+          <p>care@megamart.in</p>
+        </div>
+      </div>
     </div>
   </body>
 </html>
 <script>
-    
-    const register = document.getElementById("register");
-    register.addEventListener("submit", (e) => {
+  const register = document.getElementById("register");
+  register.addEventListener("submit", (e) => {
     e.preventDefault();
     const name = document.getElementById("name").value;
     const last = document.getElementById("last").value;
@@ -123,17 +179,19 @@
     const pass = document.getElementById("password").value;
 
     fetch("http://localhost:4500/users/register", {
-        method: "POST",
-        body: JSON.stringify({name,last, email,pass }),
-        headers: { "Content-Type": "application/json" },
+      method: "POST",
+      body: JSON.stringify({ name, last, email, pass }),
+      headers: { "Content-Type": "application/json" },
     })
-        .then((response) => response.json())
-        .then((data) => {
+      .then((response) => response.json())
+      .then((data) => {
         if (data.success) {
-            console.log(data);
+          console.log(data);
         } else {
-            console.log("err");
+          console.log("err");
         }
-        });
-    });
+      });
+      alert("signup successful")
+      window.location="./login.html";
+  });
 </script>

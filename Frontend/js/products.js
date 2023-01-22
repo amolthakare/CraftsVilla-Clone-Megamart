@@ -2,7 +2,6 @@
 let token = localStorage.getItem("login");
 console.log(token);
 let bag;
-let bag_;
 
 fetch("http://localhost:4500/data", {
   headers: {
@@ -59,6 +58,7 @@ function display(data) {
     cart_button.innerText = "Add to Cart";
     cart_button.setAttribute("class", "map_button");
     cart_button.addEventListener("click",()=>{
+      myFunction();
       cart_add(elem);
     })
 
@@ -76,15 +76,18 @@ const item=(elem)=>{
 }
 
 function cart_add(elem){
+  let userid = localStorage.getItem("userID");
   const name = elem.name;
   const image = elem.image;
   const price = elem.price; 
   const discount = elem.discount;
   const strike = elem.strike;
+  const userID = userid;
+  const quant = 1;
   console.log()
   fetch("http://localhost:4500/cart/create",{
       method:"POST",
-      body:JSON.stringify({image,name,price,strike,discount}),
+      body:JSON.stringify({image,name,price,strike,discount,userID,quant}),
       headers:{
         authenticate: `${token}`,
         "Content-Type": "application/json" 
@@ -94,6 +97,7 @@ function cart_add(elem){
   .then((data)=>{
       console.log(data);
   })
+  display_cartlength();
 }
 
 const sortItems = () => {
@@ -136,4 +140,14 @@ for (i = 0; i < acc.length; i++) {
       panel.style.maxHeight = panel.scrollHeight + "px";
     } 
   });
+}
+
+// search
+
+function search(){
+  let q = document.getElementById("search").value;
+  let newData = bag.filter(function(elem){
+    return elem.title.toLowerCase().includes(q.toLowerCase());
+  })
+  console.log(newData);
 }

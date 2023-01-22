@@ -20,6 +20,7 @@ const get_item=(data) => {
 
     item_cart.addEventListener("click",()=>{
         cart_add(data);
+        myFunction();
     })
     
 }
@@ -29,15 +30,18 @@ get_item(data);
 let token = localStorage.getItem("login");
 console.log(token);
 function cart_add(elem){
+    let userid = localStorage.getItem("userID");
     const name = elem.name;
     const image = elem.image;
     const price = elem.price; 
     const discount = elem.discount;
     const strike = elem.strike;
+    const userID = userid;
+    const quant = 1;
     console.log()
     fetch("http://localhost:4500/cart/create",{
         method:"POST",
-        body:JSON.stringify({image,name,price,strike,discount}),
+        body:JSON.stringify({image,name,price,strike,discount,userID,quant}),
         headers:{
           authenticate: `${token}`,
           "Content-Type": "application/json" 
@@ -47,6 +51,7 @@ function cart_add(elem){
     .then((data)=>{
         console.log(data);
     })
+    display_cartlength();
 }
 
   // accordion

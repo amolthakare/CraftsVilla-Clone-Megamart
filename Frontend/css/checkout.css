@@ -1,0 +1,128 @@
+
+#review{
+    display: flex;
+    padding:3% 10%;
+}
+
+
+#adress{
+    width: 50%;
+}
+
+#adress p{
+    font-size: 22px;
+}
+
+#adress p+p{
+    border-bottom: 1px solid rgb(134, 130, 130);
+    font-size: 18px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.first input {
+    width: 47%;
+    padding: 12px;
+    /* padding: 10px 100px 8px 10px; */
+    font-size: 13px;
+    margin: 10px 10px 30px 0px;
+}
+
+.second input {
+    /* display: block; */
+    /* padding: 10px 388px 8px 10px; */
+    width: 94%;
+    padding: 12px;
+    font-size: 13px;
+    margin: 0px 30px 30px 0px;
+}
+
+.third input {
+    /* padding: 10px 50px 8px 10px; */
+    width: 47%;
+    font-size:13px;
+    padding: 12px;
+    margin: 0px 10px 30px 0px;
+
+}
+
+.four input {
+    /* padding: 10px 50px 8px 10px; */
+    width: 47%;
+    padding: 12px;
+    font-size:13px;
+}
+
+#order_details{
+    margin-left: 5%;
+    background-color: #f7f7f7;
+    width: 40%;
+    padding: 2%;
+}
+.order_d_1{
+    color: #63636d;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.order_products{
+    display: flex;
+    padding: 10px 0px;
+    border-bottom: 1px dashed rgb(158, 156, 156);
+}
+.order_products > img{
+    width: 20%;
+    margin-right: 5%;
+}
+.order_products_name {
+    font-size: 16px;
+}
+.order_products_name1{
+    color: grey;
+    font-size: 14px;
+}
+.price_div{
+    margin-top: 30px;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+.shipping_div{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    /* border-bottom: 1px dashed rgb(158, 156, 156); */
+}
+.total_div{
+    font-size: 16px;
+    padding-top: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px dashed rgb(158, 156, 156);
+}
+
+@media (max-width:1120px){
+    #review{
+        flex-direction: column;
+        row-gap: 30px;
+    }
+    #adress{
+        width: 100%;
+    }
+    #order_details{
+        width: 90%;
+    }
+}
+#payment{
+    margin-top: 80px;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px;
+    background-color: #902735;
+    color: white;
+    font-weight: bold;
+    border: none;
+}

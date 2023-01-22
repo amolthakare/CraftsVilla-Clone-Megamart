@@ -5,8 +5,7 @@
     <title>homepage</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/index.css">
-    <link rel="stylesheet" href="../css/item_details.css">
-    <link rel="stylesheet" href="../css/snackbar.css">
+    <link rel="stylesheet" href="../css/cart.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <script src="https://kit.fontawesome.com/c8503353a1.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -57,79 +56,33 @@
     </div>
 
     <!-- product details -->
-    
-    <div id="main">
+    <div id="container">
+        <div class="left">
+        </div>
 
-        <div id="item_image">
-            
+        <div class="right">
+            <div class="top">
+                <div class="cartTotal">
+                    <h1>Cart Total : ₹</h1>
+                    <h1 class="total"></h1>
+                </div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlWA5kqwZR63rkyAF90ccKk4VAB28WG96VVmvwXnq2o5660x9VjUet0uxOfC4yeY87-w&usqp=CAU"
+                    alt="" />
+                <p>SHIPPING METHOD : FREE</p>
+                <p>CASH ON DELEVERY : AVAILABLE</p>
+                <a href="./checkout.html">
+                    <button>Proceed To Checkout</button>
+                </a>
+            </div>
+
+            <div class="bottom">
+                <h2>OFFER CODE</h2>
+                <input placeholder="Coupon Code" id="descountCupon"/>
+                <button id="cupanButton">Apply</button>
+                <p class="code">use 'mega30' to get 30% off. </p>
+            </div>
         </div>
-    
-        <div id="info">
-    
-          <p id="item_name">Brand</p>
-            
-          <div id="item_price_div">
-            <p id="item_price">Price</p>
-            <s id="item_strike">strike</s>
-            <p id="item_discount">discount</p>
-          </div>
-          
-    
-          <p id="tax">VAT exception. VAT not included.</p>
-          <p id="tax1">item no. P00766526</p>
-    
-          <button class="button_cart">Add to Cart <i class="fa-solid fa-bag-shopping"> </i></button>
-          <div id="snackbar">Added to Cart <i class="fa-solid fa-bag-shopping"> </i></div>
-          <button class="button_wishlist">Add to Wishlist <i class="fa-regular fa-heart"></i></button>
-    
-          <p id="ship"><b>Free Shipping </b>on all orders for a limited time only.</p>
-    
-          <button class="accordion" id="sty">Product details</button>
-          <div class="panel">
-            <p>Luxury Pack of Cotton Pieces Face Towel</p>
-            <li>upper: fabric</li>
-            <li>Home & Decor</li>
-            <li>Cotton</li>
-            <li>Cotton Washbasin Napkin|Hand Towel for Kitchen and Bathroom</li>
-            <li>Kitchen Ware</li>
-            <li>Made in Italy</li>
-          </div>
-    
-          <button class="accordion">size and fit</button>
-          <div class="panel">
-            <li>True to size</li>
-            <li>Slightly wide</li>
-            <li>Half sizes please take the next size up</li>
-            <li>European sizes</li>
-            <li>2,5cm-1" platform (size EU 38)</li>
-            <li>5cm-2" wedge heel (size EU 38)</li>
-            <p>If you have any questions, please call our customer care team at</p>
-            <p class="pp">+49 89 127695-101</p>
-            <p class="pp">Argentina: 0800-666-0663</p>
-            <p class="pp">Chile: 800-914-515</p>
-            <p class="pp">Colombia: 01800-518-5268</p>
-            <p class="pp">Mexico: 01-800-099-0703</p>
-          </div>
-    
-          <button class="accordion">delivery and free returns</button>
-          <div class="panel">
-            <p>All orders are shipped worldwide via our affiliate courier DHL. Please see the shipping method as well as shipping costs and delivery times for your destination <u>here</u>.</p>
-            <p>We gladly accept returns within 30 days of receipt free of charge. Read <u>here</u>.</p>
-          </div>
-    
-          <p class="ppp">More questions about this item?</p>
-          <p class="ppp">See more Balenciaga</p>
-          <p class="ppp">See more Shoes by Balenciaga</p>
-    
-          <!-- icons -->
-          <div id="icons">
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-pinterest"></i>
-          </div>
-    
-        </div>
-      </div>
+    </div>
 
     <div id="footer">
         <div class="footer_1">
@@ -172,6 +125,5 @@
     </div>
   </body>
 </html>
-<script src="../js/item_details.js"></script>
+<script src="../js/cart.js"></script>
 <script src="../js/cart_length.js"></script>
-<script src="../js/snackbar.js"></script>

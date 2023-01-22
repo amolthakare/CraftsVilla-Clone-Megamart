@@ -1,0 +1,176 @@
+#maindiv{
+    /* border: 1px solid red; */
+    width: 70%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#h2tag{
+    font-size: 19px;
+    letter-spacing: 0.5px;
+    color: black;
+}
+
+#payment_ptag{
+    color: #757575;
+    font-size: 16px;
+}
+
+#card_details{
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#card{
+    width: 50%;
+    
+    /* border: 1px solid green; */
+}
+
+.card{
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+}
+
+#radio{
+    margin-top: -4px;
+}
+
+#p_card{
+    font-size: 17px;
+    color: black;
+    font-weight: bold;
+}
+
+#cardicon{
+    font-size: 20px;
+    /* margin-top: 5px; */
+}
+
+#shipp{
+    font-size: 16px;
+    color: #757575;
+    margin-left: 10px;
+}
+
+#details{
+    width: 50%;
+
+}
+
+.icons > img{
+    width:60%;
+    margin-bottom: 10px;
+}
+
+.ptag{
+    /* background-color: #757575; */
+    font-size: 16px;
+    color: #757575;
+}
+
+.input-icons i {
+    position: absolute;
+    margin-top: 10px;
+    font-size: 20px;
+}
+  
+.input-icons {
+    width: 100%;
+    margin-bottom: 10px;
+}
+  
+.icon {
+    padding: 10px;
+    min-width: 40px;
+}
+  
+.input-field {
+    width: 100%;
+    padding: 10px;
+    /* text-align: center; */
+}
+
+.inputdiv{
+    margin-bottom: 15px;
+}
+.inputdiv i{
+    position: absolute;
+    /* margin-top: 10px; */
+    font-size: 20px;
+    margin-left: 25px;
+    opacity: 0.6;
+}
+
+.input_tag{
+    width: 95%;
+    padding: 10px;
+}
+.input_tags{
+    width: 50%;
+    padding: 10px;
+}
+
+#csv{
+    display: flex;
+    /* gap: 5%; */
+}
+
+#checkout{
+    margin-top: 30px;
+    background-color: #902735;
+    color: white;
+    border: none;
+    padding: 10px 50px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    /* align-items: right; */
+}
+
+#checkout a {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#paypaldiv{
+    display: flex;
+}
+
+#paypal{
+    width: 50%;
+    
+    /* border: 1px solid green; */
+}
+
+.paypal{
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+}
+
+@media (max-width:650px){
+    #card_details{
+        flex-direction: column;
+    }
+    #card{
+        width: 100%;
+    }
+    #details{
+        width: 100%;
+    }
+    #paypaldiv{
+        flex-direction: column;
+    }
+    #paypal{
+        width: 100%;
+    }
+    #paypal_btn{
+        width: 100%;
+    }
+}

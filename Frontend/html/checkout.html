@@ -5,21 +5,12 @@
     <title>homepage</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/index.css">
-    <link rel="stylesheet" href="../css/item_details.css">
-    <link rel="stylesheet" href="../css/snackbar.css">
+    <link rel="stylesheet" href="../css/checkout.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <script src="https://kit.fontawesome.com/c8503353a1.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Damion&family=Poppins&display=swap" rel="stylesheet">
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.1/dist/css/themes/splide-skyblue.min.css"
-    />
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.1/dist/js/splide.min.js">
-    </script>
   </head>
   <body>
         <nav>
@@ -56,80 +47,68 @@
         <p><a href="./products.html">Ceramic Mugs</a></p>
     </div>
 
-    <!-- product details -->
     
-    <div id="main">
+    <div id="review">
 
-        <div id="item_image">
-            
+        <div id="adress">
+            <p>CHECKOUT</p>
+            <p>Customer Details</p>
+            <br>
+            <div class="first">
+                <input type="text" placeholder="*First Name" required>
+                <input type="text" placeholder="*Last Name" required>
+            </div>
+            <div class="second">
+                <input type="text" placeholder="*Street Address" required>
+                <input type="text" placeholder="Apt, Suite, floor">
+            </div>
+            <div class="third">
+                <input id="zip" type="text" placeholder="*Zip Code" required>
+                <input type="text" placeholder="*City" required>
+                <input type="text" placeholder="STATE" required>
+                <input type="text" placeholder="COUNTRY" required>
+            </div>
+            <div class="four">
+                <input type="text" placeholder="*ENTER MOBILE" required>
+            </div>   
         </div>
-    
-        <div id="info">
-    
-          <p id="item_name">Brand</p>
+
+        <div id="order_details">
+            <p class="order_d_1">Order Details</p>
+            <div class="order_products_div">
+                <!-- <div class="order_products">
+                    <img src="https://cdn.plotch.io/image/upload/w_118,h_118/C/V/PLOY7FmaJL1668189623_b9e1357684a9591fd93467ed9887d760765cfe6be7140a48f38580253cc98d04.jpeg" />
+                    <div>
+                        <p class="order_products_name">Cotton Washbasin Napkin|Hand Towel for Kitchen and Bathroom</p>
+                        <p class="order_products_name1">Estimated delivery time 24 Jan 2023</p>
+                    </div>
+                </div> -->
+            </div>
+
+            <div class="price_div">
+                <p>Price</p>
+                <p class="total">0</p>
+            </div>
+
+            <div class="shipping_div">
+                <p >Discount</p>
+                <p class="discountt">0</p>
+            </div>
+
+            <div class="total_div">
+                <p>Total Payment</p>
+                <p class="Total">0</p>
+            </div>
             
-          <div id="item_price_div">
-            <p id="item_price">Price</p>
-            <s id="item_strike">strike</s>
-            <p id="item_discount">discount</p>
-          </div>
-          
-    
-          <p id="tax">VAT exception. VAT not included.</p>
-          <p id="tax1">item no. P00766526</p>
-    
-          <button class="button_cart">Add to Cart <i class="fa-solid fa-bag-shopping"> </i></button>
-          <div id="snackbar">Added to Cart <i class="fa-solid fa-bag-shopping"> </i></div>
-          <button class="button_wishlist">Add to Wishlist <i class="fa-regular fa-heart"></i></button>
-    
-          <p id="ship"><b>Free Shipping </b>on all orders for a limited time only.</p>
-    
-          <button class="accordion" id="sty">Product details</button>
-          <div class="panel">
-            <p>Luxury Pack of Cotton Pieces Face Towel</p>
-            <li>upper: fabric</li>
-            <li>Home & Decor</li>
-            <li>Cotton</li>
-            <li>Cotton Washbasin Napkin|Hand Towel for Kitchen and Bathroom</li>
-            <li>Kitchen Ware</li>
-            <li>Made in Italy</li>
-          </div>
-    
-          <button class="accordion">size and fit</button>
-          <div class="panel">
-            <li>True to size</li>
-            <li>Slightly wide</li>
-            <li>Half sizes please take the next size up</li>
-            <li>European sizes</li>
-            <li>2,5cm-1" platform (size EU 38)</li>
-            <li>5cm-2" wedge heel (size EU 38)</li>
-            <p>If you have any questions, please call our customer care team at</p>
-            <p class="pp">+49 89 127695-101</p>
-            <p class="pp">Argentina: 0800-666-0663</p>
-            <p class="pp">Chile: 800-914-515</p>
-            <p class="pp">Colombia: 01800-518-5268</p>
-            <p class="pp">Mexico: 01-800-099-0703</p>
-          </div>
-    
-          <button class="accordion">delivery and free returns</button>
-          <div class="panel">
-            <p>All orders are shipped worldwide via our affiliate courier DHL. Please see the shipping method as well as shipping costs and delivery times for your destination <u>here</u>.</p>
-            <p>We gladly accept returns within 30 days of receipt free of charge. Read <u>here</u>.</p>
-          </div>
-    
-          <p class="ppp">More questions about this item?</p>
-          <p class="ppp">See more Balenciaga</p>
-          <p class="ppp">See more Shoes by Balenciaga</p>
-    
-          <!-- icons -->
-          <div id="icons">
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-pinterest"></i>
-          </div>
-    
+            <div id="payment_div">
+                <a href="./payment.html"><button id="payment">Continue With Payment</button></a>
+                
+            </div>
+
         </div>
-      </div>
+
+    </div>
+    
 
     <div id="footer">
         <div class="footer_1">
@@ -172,6 +151,5 @@
     </div>
   </body>
 </html>
-<script src="../js/item_details.js"></script>
+<script src="../js/checkout.js"></script>
 <script src="../js/cart_length.js"></script>
-<script src="../js/snackbar.js"></script>

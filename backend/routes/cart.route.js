@@ -9,6 +9,12 @@ cartRoute.get("/",async(req,res)=>{
     res.send(posts);
 })
 
+cartRoute.get("/get/:id",async(req,res)=>{
+    const id = req.params.id;
+    const posts = await CartModel.find({"userID":id});
+    res.send(posts);
+})
+
 cartRoute.post("/create",async(req,res)=>{
     const payload = req.body;
     try{
@@ -32,11 +38,14 @@ cartRoute.patch("/update/:id",async(req,res)=>{
     const userID_making_req = req.body.userID;
     try{
         if(userID_making_req!==userID_in_note){
-            res.send({"msg":"you are not authorized"});
+            // res.send({"msg":"you are not authorized"});
+            await CartModel.findByIdAndUpdate({"_id":id},payload);
+            res.send("Updated the product")
+    
         }
         else{
             await CartModel.findByIdAndUpdate({"_id":id},payload);
-            res.send("Updated the note")
+            res.send("Updated the product")
         }
     }
     catch(err){
@@ -54,17 +63,19 @@ cartRoute.delete("/delete/:id",async(req,res)=>{
     const userID_making_req = req.body.userID;
     try{
         if(userID_making_req!==userID_in_note){
-            res.send({"msg":"you are not authorized"});
+            // res.send({"msg":"you are not authorized"});
+            await CartModel.findByIdAndDelete({"_id":id});
+            res.send("product removed");
         }
         else{
             await CartModel.findByIdAndDelete({"_id":id});
-            res.send("todo deleted");
+            res.send("product removed");
         }
     }
     catch(err){
         console.log(err);
         res.status(404);
-        res.send({error:"todo doesn't exsist"})
+        res.send({error:"product doesn't exsist"})
     }
 })
 

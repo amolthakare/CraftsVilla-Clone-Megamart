@@ -1,0 +1,179 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  /* container */
+  
+  #container {
+    display: flex;
+    width: 85%;
+    margin: auto;
+    gap: 100px;
+    justify-content: space-evenly;
+    margin-top: 50px;
+  }
+  
+  #product {
+    display: flex;
+    gap: 20px;
+    border: 1px solid #9e9e9e;
+    margin-top: 10px;
+  }
+  
+  .productLeft img {
+    height: 100%;
+  }
+  
+  .fa-solid {
+    cursor: pointer;
+  }
+  
+  .productRight {
+    padding: 20px;
+  }
+  
+  .productRightTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .productRightTop button {
+    border: none;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: white;
+    cursor: pointer;
+  }
+  
+  img {
+    width: 150px;
+  }
+  
+  .qty {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .qty button {
+    padding: 3px 10px;
+    font-weight: bold;
+    font-size: 20px;
+    border: 2px solid #902735;
+    background-color: white;
+    color: #902735;
+    cursor: pointer;
+  }
+  
+  .qty button:hover {
+    background-color: rgb(249, 224, 232);
+  }
+  
+  .brand {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 16px;
+  }
+  
+  .category {
+    font-size: 16px;
+    margin-top: 5px;
+  }
+  
+  .price {
+    font-size: 18px;
+    margin-top: 5px;
+  }
+  
+  .cartTotal {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .right div > img {
+    width: 400px;
+    margin-top: 20px;
+    border: 1px solid #e8e8e7;
+    margin-bottom: 20px;
+  }
+  
+  .top {
+    background-color: #eff0f0;
+    padding: 30px;
+  }
+  
+  .top p {
+    margin-bottom: 10px;
+  }
+  
+  .top button {
+    padding: 13px 30px;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    background-color: #902735;
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .top button:hover {
+    background-color: rgb(216, 16, 83);
+  }
+  
+  .bottom {
+    background-color: #eff0f0;
+    padding: 30px;
+    margin-top: 30px;
+  }
+  
+  .bottom input {
+    padding: 13px;
+    border: 1px solid;
+  }
+  
+  .bottom button {
+    padding: 13px 30px;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    background-color: #902735;
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .bottom button:hover {
+    background-color: rgb(216, 16, 83);
+  }
+  .code{
+    color: red;
+    font-size: 14px;
+  }
+  @media all and (min-width: 481px) and (max-width: 768px) {
+    #container {
+      display: flex;
+      flex-direction: column;
+      width: 85%;
+      margin: auto;
+      gap: 100px;
+    }
+  }
+  
+  @media all and (min-width: 50px) and (max-width: 480px) {
+    #container {
+      display: flex;
+      flex-direction: column;
+      width: 85%;
+      margin: auto;
+      gap: 100px;
+    }
+  }
+  
+ 

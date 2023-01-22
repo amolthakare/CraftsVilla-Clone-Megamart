@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/navbar_footer.css">
     <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/snackbar.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <script src="https://kit.fontawesome.com/c8503353a1.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,9 +35,9 @@
             <ul id="ul_tag">
                 <li><a href="#"><i id="about_us" class="fa-solid fa-circle-info"></i>About us</a></li>
                 <li><a href="#"><i id="itag" class="fa-solid fa-bell"></i>Alert</a></li>
-                <li><a href="#"><i id="itag" class="fa-solid fa-user"></i>Login</a></li>
+                <li><a href="./login.html"><i id="itag" class="fa-solid fa-user"></i>Login</a></li>
                 <li><a href="#"><i id="itag" class="fa-regular fa-heart"></i>Wishlist</a></li>
-                <li><a href="#"><i id="itag" class="fa-solid fa-cart-shopping"></i>Cart</a></li>
+                <li><a href="./cart.html"><i id="itag" class="fa-solid fa-cart-shopping"></i>Cart</a></li>
                 <li id="cart_c">(0)</li>
             </ul>
         </nav>
@@ -53,7 +54,8 @@
             
             <input type="email" placeholder="Enter Your Email ID" id="email"/>
             <input type="password" placeholder="Enter Your Password" id="password"/>
-            <input type="submit" value="Log in" id="login_btn">
+            <input type="submit" value="Log in" id="login_btn" onclick="myFunction()">
+            <!-- <div id="snackbar">Login Succesful</div> -->
 
         </form>
         
@@ -106,6 +108,7 @@
     </div>
   </body>
 </html>
+<!-- <script src="../js/snackbar.js"></script> -->
 <script>
     const login = document.getElementById("login_script");
     login.addEventListener("submit",(e)=>{
@@ -122,8 +125,14 @@
         .then((data)=>{
             if(data){
                 console.log(data);
-                localStorage.setItem("login",data.token);
+                console.log(data.userID);
+                localStorage.setItem("userID",data.userID);
+                localStorage.setItem("data_length",data.token);
                 alert("Login Succesfully");
+                window.location="../index.html";
+            }
+            else{
+                alert("wrong credentials");
             }
         })
     })
