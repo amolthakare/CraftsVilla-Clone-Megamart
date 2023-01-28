@@ -44,7 +44,7 @@
       <ul id="ul_tag">
         <li><a href="./admin.html"><i id="itag" class="fa-solid fa-user"></i>Admin login</a></li>
         <li><a href="./login.html"><i id="itag" class="fa-solid fa-user"></i>Login</a></li>
-        <li><a href="#"><i id="itag" class="fa-regular fa-heart"></i>Wishlist</a></li>
+        <li><a href="#"><i class="fa-solid fa-right-from-bracket"></i>Logout</a></li>
         <li><a href="./cart.html"><i id="itag" class="fa-solid fa-cart-shopping"></i>Cart</a></li>
         <li id="cart_c">(0)</li>
     </ul>
@@ -159,7 +159,7 @@
     const email = document.getElementById("email").value;
     const pass = document.getElementById("password").value;
 
-    fetch("http://localhost:4500/users/register", {
+    fetch("https://calm-cyan-meerkat-suit.cyclic.app/users/register", {
       method: "POST",
       body: JSON.stringify({ name, last, email, pass }),
       headers: { "Content-Type": "application/json" },
@@ -176,3 +176,4 @@
       window.location="./login.html";
   });
 </script>
+<!-- <script src="../js/logout.js"></script> -->

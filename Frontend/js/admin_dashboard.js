@@ -8,7 +8,7 @@ register.addEventListener("submit", (e) => {
   const strike = "";
   const discount = "";
 
-  fetch("http://localhost:4500/data/create", {
+  fetch("https://calm-cyan-meerkat-suit.cyclic.app/data/create", {
     method: "POST",
     body: JSON.stringify({ image, name, price, strike, discount }),
     headers: {
@@ -30,7 +30,7 @@ register.addEventListener("submit", (e) => {
 
 const displaycart = async () => {
   try {
-    let res = await fetch(`http://localhost:4500/data`, {
+    let res = await fetch(`https://calm-cyan-meerkat-suit.cyclic.app/data`, {
       headers: {
         authenticate: `${token}`,
       },
@@ -94,7 +94,7 @@ function display(data){
 
 const Delete = async (id) => {
     try {
-      let res = await fetch(`http://localhost:4500/data/delete/${id}`, {
+      let res = await fetch(`https://calm-cyan-meerkat-suit.cyclic.app/data/delete/${id}`, {
         headers: {
           authenticate: `${token}`,
         },

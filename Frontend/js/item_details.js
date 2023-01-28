@@ -39,7 +39,7 @@ function cart_add(elem){
     const userID = userid;
     const quant = 1;
     console.log()
-    fetch("http://localhost:4500/cart/create",{
+    fetch("https://calm-cyan-meerkat-suit.cyclic.app/cart/create",{
         method:"POST",
         body:JSON.stringify({image,name,price,strike,discount,userID,quant}),
         headers:{

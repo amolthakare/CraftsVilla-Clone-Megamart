@@ -4,7 +4,7 @@ const displaycart = async () => {
     try {
         let user_ID = localStorage.getItem("userID");
         let token = localStorage.getItem("login");
-      let res = await fetch(`http://localhost:4500/cart/get/${user_ID}`, {
+      let res = await fetch(`https://calm-cyan-meerkat-suit.cyclic.app/cart/get/${user_ID}`, {
         headers: {
           authenticate: `${token}`,
         },

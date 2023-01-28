@@ -3,7 +3,7 @@ let token = localStorage.getItem("login");
 console.log(token);
 let bag;
 
-fetch("http://localhost:4500/data", {
+fetch("https://calm-cyan-meerkat-suit.cyclic.app/data", {
   headers: {
     authenticate: `${token}`,
   },
@@ -85,7 +85,7 @@ function cart_add(elem){
   const userID = userid;
   const quant = 1;
   console.log()
-  fetch("http://localhost:4500/cart/create",{
+  fetch("https://calm-cyan-meerkat-suit.cyclic.app/cart/create",{
       method:"POST",
       body:JSON.stringify({image,name,price,strike,discount,userID,quant}),
       headers:{
@@ -147,7 +147,8 @@ for (i = 0; i < acc.length; i++) {
 function search(){
   let q = document.getElementById("search").value;
   let newData = bag.filter(function(elem){
-    return elem.title.toLowerCase().includes(q.toLowerCase());
+    return elem.name.toLowerCase().includes(q.toLowerCase());
   })
   console.log(newData);
+  display(newData);
 }

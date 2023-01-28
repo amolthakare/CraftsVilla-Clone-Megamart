@@ -17,7 +17,7 @@ var bag;
 
 const displaycart = async () => {
   try {
-    let res = await fetch(`http://localhost:4500/cart/get/${user_ID}`, {
+    let res = await fetch(`https://calm-cyan-meerkat-suit.cyclic.app/cart/get/${user_ID}`, {
       headers: {
         authenticate: `${token}`,
       },
@@ -104,7 +104,7 @@ displaycart();
 
 const Delete = async (id) => {
   try {
-    let res = await fetch(`http://localhost:4500/cart/delete/${id}`, {
+    let res = await fetch(`https://calm-cyan-meerkat-suit.cyclic.app/cart/delete/${id}`, {
       headers: {
         authenticate: `${token}`,
       },
@@ -126,7 +126,7 @@ function increaseQuant(el) {
   const quant = quantity;
   console.log(quant);
 
-  fetch(`http://localhost:4500/cart/update/${el._id}`, {
+  fetch(`https://calm-cyan-meerkat-suit.cyclic.app/cart/update/${el._id}`, {
     method: "PATCH",
     body: JSON.stringify({ quant }),
     headers: {
@@ -148,7 +148,7 @@ function decreaseQuant(el) {
     const quant = quantity;
     console.log(quant);
 
-    fetch(`http://localhost:4500/cart/update/${el._id}`, {
+    fetch(`https://calm-cyan-meerkat-suit.cyclic.app/cart/update/${el._id}`, {
       method: "PATCH",
       body: JSON.stringify({ quant }),
       headers: {
