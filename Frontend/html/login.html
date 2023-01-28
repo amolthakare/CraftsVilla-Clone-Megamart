@@ -34,8 +34,8 @@
             </div>
             <ul id="ul_tag">
                 <li><a href="./admin.html"><i id="itag" class="fa-solid fa-user"></i>Admin login</a></li>
-                <li><a href="./login.html"><i id="itag" class="fa-solid fa-user"></i>Login</a></li>
-                <li><a href="#"><i id="itag" class="fa-regular fa-heart"></i>Wishlist</a></li>
+                <li><a href="./login.html" id="login_name"><i id="itag" class="fa-solid fa-user"></i>Login</a></li>
+                <li onclick="logout()"><a href="#"><i class="fa-solid fa-right-from-bracket"></i>Logout</a></li>
                 <li><a href="./cart.html"><i id="itag" class="fa-solid fa-cart-shopping"></i>Cart</a></li>
                 <li id="cart_c">(0)</li>
             </ul>
@@ -108,14 +108,16 @@
   </body>
 </html>
 <!-- <script src="../js/snackbar.js"></script> -->
+<script src="../js/logout.js"></script>
 <script>
+    
     const login = document.getElementById("login_script");
     login.addEventListener("submit",(e)=>{
         e.preventDefault();
         const email = document.getElementById("email").value;
         const pass = document.getElementById("password").value;
 
-        fetch("http://localhost:4500/users/login",{
+        fetch("https://calm-cyan-meerkat-suit.cyclic.app/users/login",{
             method:"POST",
             body:JSON.stringify({email,pass}),
             headers:{ "Content-Type": "application/json" },
@@ -128,6 +130,8 @@
                 localStorage.setItem("userID",data.userID);
                 localStorage.setItem("data_length",data.token);
                 localStorage.setItem("login",data.token);
+                localStorage.setItem("name",data.name);
+                
                 alert("Login Succesfully");
                 window.location="../index.html";
             }
@@ -137,3 +141,4 @@
         })
     })
 </script>
+<script src="../js/logout.js"></script>

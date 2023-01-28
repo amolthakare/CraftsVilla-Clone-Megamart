@@ -8,7 +8,7 @@ register.addEventListener("submit", (e) => {
   const name = document.getElementById("name_post").value;
   const price = document.getElementById("price_post").value;
 
-  fetch(`http://localhost:4500/data/update/${data._id}`, {
+  fetch(`https://calm-cyan-meerkat-suit.cyclic.app/data/update/${data._id}`, {
     method: "PATCH",
     body: JSON.stringify({ image, name, price,}),
     headers: {

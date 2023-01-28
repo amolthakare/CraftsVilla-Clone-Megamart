@@ -34,8 +34,8 @@
             </div>
             <ul id="ul_tag">
                 <li><a href="./admin.html"><i id="itag" class="fa-solid fa-user"></i>Admin login</a></li>
-                <li><a href="./login.html"><i id="itag" class="fa-solid fa-user"></i>Login</a></li>
-                <li><a href="#"><i id="itag" class="fa-regular fa-heart"></i>Wishlist</a></li>
+                <li><a href="./login.html" id="login_name"><i id="itag" class="fa-solid fa-user"></i>Login</a></li>
+                <li onclick="logout()"><a href="#"><i class="fa-solid fa-right-from-bracket"></i>Logout</a></li>
                 <li><a href="./cart.html"><i id="itag" class="fa-solid fa-cart-shopping"></i>Cart</a></li>
                 <li id="cart_c">(0)</li>
             </ul>
@@ -171,7 +171,7 @@
                 </select>
             </div>
             <div id="container">
-                <h1>Login First to get the access for this page</h1>
+                <h1 id="helloo">Login First to get the access for this page</h1>
             </div>
             <div id="snackbar">Added to Cart <i class="fa-solid fa-bag-shopping"> </i></div>
         </div>
@@ -221,3 +221,4 @@
 <script src="../js/products.js"></script>
 <script src="../js/cart_length.js"></script>
 <script src="../js/snackbar.js"></script>
+<script src="../js/logout.js"></script>

@@ -17,7 +17,7 @@ const display_cartlength = async()=>{
     let data_length = localStorage.getItem("login");
     let userid = localStorage.getItem("userID");
     try{
-        let res = await fetch(`http://localhost:4500/cart/get/${userid}`, {
+        let res = await fetch(`https://calm-cyan-meerkat-suit.cyclic.app/cart/get/${userid}`, {
             headers: {
                 authenticate: `${data_length}`,
             },
